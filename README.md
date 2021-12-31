@@ -1,7 +1,7 @@
 # 🏗 scaffold-eth | 🏰 BuidlGuidl
 
 
-iThis repo contains my implementation of the DEX challenge, no. 4 in the Ethereum Speedrun.
+This repo contains my implementation of the DEX challenge, no. 4 in the Ethereum Speedrun.
 
 The contracts have been deployed and [verified on Rinkeby](https://rinkeby.etherscan.io/address/0xBD44C66C21A90c6ca2784690e2DBD8841cfeede9).
 
