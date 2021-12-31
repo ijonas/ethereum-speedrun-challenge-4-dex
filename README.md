@@ -1,5 +1,13 @@
 # 🏗 scaffold-eth | 🏰 BuidlGuidl
 
+
+iThis repo contains my implementation of the DEX challenge, no. 4 in the Ethereum Speedrun.
+
+The contracts have been deployed and [verified on Rinkeby](https://rinkeby.etherscan.io/address/0xBD44C66C21A90c6ca2784690e2DBD8841cfeede9).
+
+The DApp is accessible at [https://ijonas-ethspeed-ch-4.surge.sh/](https://ijonas-ethspeed-ch-4.surge.sh/).
+
+
 ## 🚩 Challenge 3: Minimum Viable Exchange
 
 This challenge will provide a tutorial to help you build/understand a simple decentralized exchange. This readme is an upated version of the [original tutorial](https://medium.com/@austin_48503/%EF%B8%8F-minimum-viable-exchange-d84f30bd0c90). Please read the intro for a background on what we are building!

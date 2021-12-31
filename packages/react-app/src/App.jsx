@@ -54,7 +54,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const targetNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const targetNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -247,7 +247,6 @@ function App(props) {
   const myMainnetDAIBalance = useContractReader(mainnetContracts, "DAI", "balanceOf", [
     "0x34aA3F359A9D614239015126635CE7732c18fDF3",
   ]);
-
 
   /*
   const addressFromENS = useResolveName(mainnetProvider, "austingriffith.eth");
@@ -470,23 +469,23 @@ function App(props) {
 
         <Switch>
           <Route exact path="/">
-
-            { readContracts && readContracts.DEX && address && localProvider ?
-                <Dex
-              address={address}
-              tx={tx}
-              writeContracts={writeContracts}
-              localProvider={localProvider}
-              mainnetProvider={mainnetProvider}
-              injectedProvider={localProvider}
-              readContracts={readContracts}
-              blockExplorer={blockExplorer}
-              contractConfig={contractConfig}
-              signer={userSigner}
-              price={price}
-            /> : ""
-             }  
-           
+            {readContracts && readContracts.DEX && address && localProvider ? (
+              <Dex
+                address={address}
+                tx={tx}
+                writeContracts={writeContracts}
+                localProvider={localProvider}
+                mainnetProvider={mainnetProvider}
+                injectedProvider={localProvider}
+                readContracts={readContracts}
+                blockExplorer={blockExplorer}
+                contractConfig={contractConfig}
+                signer={userSigner}
+                price={price}
+              />
+            ) : (
+              ""
+            )}
           </Route>
 
           <Route path="/contracts">
